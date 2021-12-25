@@ -29,25 +29,25 @@ namespace RecreationCenterTest
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.customerListGridView = new System.Windows.Forms.DataGridView();
             this.addCustomerBtn = new System.Windows.Forms.Button();
             this.saveCustomer = new System.Windows.Forms.Button();
             this.retrieveCustomer = new System.Windows.Forms.Button();
             this.importCustomer = new System.Windows.Forms.Button();
             this.exportCustomer = new System.Windows.Forms.Button();
             this.goHomeBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerListGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // customerListGridView
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(242, 42);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(501, 363);
-            this.dataGridView1.TabIndex = 0;
+            this.customerListGridView.AllowUserToOrderColumns = true;
+            this.customerListGridView.BackgroundColor = System.Drawing.Color.Silver;
+            this.customerListGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customerListGridView.Location = new System.Drawing.Point(242, 42);
+            this.customerListGridView.Name = "customerListGridView";
+            this.customerListGridView.Size = new System.Drawing.Size(501, 363);
+            this.customerListGridView.TabIndex = 0;
             // 
             // addCustomerBtn
             // 
@@ -75,6 +75,7 @@ namespace RecreationCenterTest
             this.saveCustomer.TabIndex = 2;
             this.saveCustomer.Text = "Save";
             this.saveCustomer.UseVisualStyleBackColor = false;
+            this.saveCustomer.Click += new System.EventHandler(this.saveCustomer_Click);
             // 
             // retrieveCustomer
             // 
@@ -88,6 +89,7 @@ namespace RecreationCenterTest
             this.retrieveCustomer.TabIndex = 3;
             this.retrieveCustomer.Text = "Retrieve";
             this.retrieveCustomer.UseVisualStyleBackColor = false;
+            this.retrieveCustomer.Click += new System.EventHandler(this.retrieveCustomer_Click);
             // 
             // importCustomer
             // 
@@ -101,6 +103,7 @@ namespace RecreationCenterTest
             this.importCustomer.TabIndex = 4;
             this.importCustomer.Text = "Import";
             this.importCustomer.UseVisualStyleBackColor = false;
+            this.importCustomer.Click += new System.EventHandler(this.importCustomer_Click);
             // 
             // exportCustomer
             // 
@@ -114,6 +117,7 @@ namespace RecreationCenterTest
             this.exportCustomer.TabIndex = 5;
             this.exportCustomer.Text = "Export";
             this.exportCustomer.UseVisualStyleBackColor = false;
+            this.exportCustomer.Click += new System.EventHandler(this.exportCustomer_Click);
             // 
             // goHomeBtn
             // 
@@ -129,7 +133,7 @@ namespace RecreationCenterTest
             this.goHomeBtn.UseVisualStyleBackColor = false;
             this.goHomeBtn.Click += new System.EventHandler(this.goHomeBtn_Click);
             // 
-            // AddCustomerForm
+            // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,18 +145,19 @@ namespace RecreationCenterTest
             this.Controls.Add(this.retrieveCustomer);
             this.Controls.Add(this.saveCustomer);
             this.Controls.Add(this.addCustomerBtn);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "AddCustomerForm";
+            this.Controls.Add(this.customerListGridView);
+            this.Name = "CustomerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Customer";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.CustomerForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.customerListGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView customerListGridView;
         private System.Windows.Forms.Button addCustomerBtn;
         private System.Windows.Forms.Button saveCustomer;
         private System.Windows.Forms.Button retrieveCustomer;

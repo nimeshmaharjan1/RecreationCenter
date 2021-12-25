@@ -19,16 +19,21 @@ namespace RecreationCenterTest
 
         private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddCustomerForm addCustomerForm = new AddCustomerForm();
-            addCustomerForm.Show();
+            CustomerForm customerForm = new CustomerForm();
+            customerForm.Show();
             this.Hide();
         }
 
         private void customerDetailToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddCustomerEntryForm addCustomerEntryForm = new AddCustomerEntryForm();
-            addCustomerEntryForm.Show();
+            CustomerEntryForm customerEntryForm = new CustomerEntryForm();
+            customerEntryForm.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

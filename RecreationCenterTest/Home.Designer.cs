@@ -80,7 +80,7 @@ namespace RecreationCenterTest
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
-            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
             this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.addCustomerToolStripMenuItem_Click);
             // 
@@ -96,7 +96,7 @@ namespace RecreationCenterTest
             // customerDetailToolStripMenuItem
             // 
             this.customerDetailToolStripMenuItem.Name = "customerDetailToolStripMenuItem";
-            this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.customerDetailToolStripMenuItem.Text = "Detail";
             this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.customerDetailToolStripMenuItem_Click);
             // 
@@ -147,6 +147,7 @@ namespace RecreationCenterTest
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F5E64A55-2C94-4816-83A5-ECAEA1248360}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RecreationCenterTest</RootNamespace>
-    <AssemblyName>RecreationCenterTest</AssemblyName>
+    <RootNamespace>RecreationCenter</RootNamespace>
+    <AssemblyName>RecreationCenter</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +52,10 @@
     <Compile Include="AddCustomerForm.Designer.cs">
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerDetails.cs" />
+    <Compile Include="CustomerEntry.cs" />
+    <Compile Include="CustomerEntryDetails.cs" />
     <Compile Include="CustomerEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +82,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerEntryForm.resx">
       <DependentUpon>CustomerEntryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +105,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

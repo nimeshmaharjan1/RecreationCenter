@@ -117,6 +117,7 @@ namespace RecreationCenterTest
             this.button1.TabIndex = 8;
             this.button1.Text = "Entry Customer";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -128,7 +129,7 @@ namespace RecreationCenterTest
             this.dataGridView1.Size = new System.Drawing.Size(501, 363);
             this.dataGridView1.TabIndex = 7;
             // 
-            // AddCustomerEntryForm
+            // CustomerEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +142,7 @@ namespace RecreationCenterTest
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "AddCustomerEntryForm";
+            this.Name = "CustomerEntryForm";
             this.Text = "AddCustomerEntryForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

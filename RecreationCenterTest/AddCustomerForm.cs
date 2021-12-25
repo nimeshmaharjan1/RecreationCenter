@@ -16,5 +16,24 @@ namespace RecreationCenterTest
         {
             InitializeComponent();
         }
+
+        public Customer Customer
+        {
+            get
+            {
+                var customer = new Customer();
+                customer.customerName = customerNameTextBox.Text;
+                customer.customerAge = int.Parse(customerAgeTextBox.Text);
+                customer.customerAddress = customerAddressTextBox.Text;
+                customer.customerContact = customerContactTextBox.Text;
+                return customer;
+            }
+
+        }
+
+        private void AddCustomerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
