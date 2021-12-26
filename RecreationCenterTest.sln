@@ -7,9 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recreation Center", "Recrea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock Museum", "..\..\Museum\Rock Museum\Rock Museum\Rock Museum.csproj", "{A26CDF61-F2F1-4467-A91B-CD3B787AD624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLDemo", "..\..\XMLDemoApp-main\XMLDemoApp-main\XMLDemo\XMLDemo.csproj", "{6CB869EA-07BC-4777-B2F6-8178165D31A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "..\..\..\..\..\Users\Acer\source\repos\CalculatorGUI\CalculatorGUI\GUI.csproj", "{0611323F-5328-49DD-B22A-CF5F857DF5A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursework1", "..\..\museum-management-system-master\museum-management-system-master\Coursework1\Coursework1.csproj", "{CFBC3256-448C-4F30-A6F3-5D699A0244A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +23,10 @@ Global
 		{A26CDF61-F2F1-4467-A91B-CD3B787AD624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26CDF61-F2F1-4467-A91B-CD3B787AD624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26CDF61-F2F1-4467-A91B-CD3B787AD624}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CB869EA-07BC-4777-B2F6-8178165D31A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CB869EA-07BC-4777-B2F6-8178165D31A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CB869EA-07BC-4777-B2F6-8178165D31A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CB869EA-07BC-4777-B2F6-8178165D31A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0611323F-5328-49DD-B22A-CF5F857DF5A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0611323F-5328-49DD-B22A-CF5F857DF5A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0611323F-5328-49DD-B22A-CF5F857DF5A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0611323F-5328-49DD-B22A-CF5F857DF5A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFBC3256-448C-4F30-A6F3-5D699A0244A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFBC3256-448C-4F30-A6F3-5D699A0244A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFBC3256-448C-4F30-A6F3-5D699A0244A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFBC3256-448C-4F30-A6F3-5D699A0244A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

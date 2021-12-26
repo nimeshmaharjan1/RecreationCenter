@@ -90,7 +90,7 @@ namespace RecreationCenterTest
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Not able to save vehicle data. Please try later");
+                MessageBox.Show("Not able to import data at this moment. PLease try again.");
             }
             return customerList;
 

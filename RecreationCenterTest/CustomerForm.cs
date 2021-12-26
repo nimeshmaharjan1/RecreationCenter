@@ -88,8 +88,8 @@ namespace RecreationCenterTest
             {
                 //READ ALL THE LINES IN THE FILE
                 var csvString = File.ReadAllText(dialogBox.FileName);
-                //Step 2: Pass the csvString to ReadFromCSV method from _vehicleRepository class
-                //Step 3: Save the value to the binding source. (Binding Source is used by our grid).
+                //Pass the csvString to ReadFromCSV method from Customer class
+                //Save the value to the binding source. (Binding Source is used by the grid).
                 _customerBindingSource.DataSource = _customerDetailsRepo.ReadFromCSV(csvString);
             }
         }

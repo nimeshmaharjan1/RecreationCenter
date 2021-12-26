@@ -5,10 +5,10 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecreationCenter
+namespace RecreationCenterTest
 {
     [Serializable()]
-    class CustomerEntry : ISerializable
+    public class CustomerEntry : ISerializable
     {
         public int customerId { get; set; }
         public string customerName { get; set; }
@@ -17,7 +17,7 @@ namespace RecreationCenter
         public TimeSpan outTime { get; set; }
         public double totalMinutes { get; set; }
         public string day { get; set; }
-        public float price { get; set; }
+        public string price { get; set; }
         [NonSerialized] public double Count;
 
         public CustomerEntry() { }
@@ -44,9 +44,9 @@ namespace RecreationCenter
             outTime = (TimeSpan)serial.GetValue(KEY4, typeof(TimeSpan));
             totalMinutes = (double)serial.GetValue(KEY5, typeof(double));
             day = (string)serial.GetValue(Key6, typeof(string));
-            price = (float)serial.GetValue(KEY, typeof(int));
+            price = (string)serial.GetValue(Key7, typeof(string));
         }
-        public void getObjectData(SerializationInfo info, StreamingContext context)
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             //You can use any custom name for your name-value pair. But make sure you
             // read the values with the same name. 
@@ -59,16 +59,16 @@ namespace RecreationCenter
             info.AddValue(Key6, day);
             info.AddValue(Key7, price);
         }
-        public string getDay()
+        public string GetDay()
         {
             string i = date.ToString("dddd");
             return i;
         }
-        public double calculateTotalMinutes()
+        public double CalculateTotalMinutes()
         {
             var OutTime = new TimeSpan(outTime.Hours, outTime.Minutes, 0);
             var InTime = new TimeSpan(inTime.Hours, inTime.Minutes, 0);
-            return OutTime.Subtract(InTime).TotalMinutes;
+            return outTime.Subtract(inTime).TotalMinutes;
         }
     }
 }

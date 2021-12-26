@@ -35,5 +35,10 @@ namespace RecreationCenterTest
         {
 
         }
+
+        private void addCustomerBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

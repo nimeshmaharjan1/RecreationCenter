@@ -128,6 +128,7 @@ namespace RecreationCenterTest
             this.addCustomerBtn.TabIndex = 8;
             this.addCustomerBtn.Text = "OK";
             this.addCustomerBtn.UseVisualStyleBackColor = false;
+            this.addCustomerBtn.Click += new System.EventHandler(this.addCustomerBtn_Click);
             // 
             // AddCustomerForm
             // 
@@ -145,6 +146,7 @@ namespace RecreationCenterTest
             this.Controls.Add(this.label1);
             this.Controls.Add(this.customerNameTextBox);
             this.Name = "AddCustomerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Customer";
             this.Load += new System.EventHandler(this.AddCustomerForm_Load);
             this.ResumeLayout(false);
