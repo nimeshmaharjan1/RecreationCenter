@@ -20,7 +20,7 @@ namespace RecreationCenterTest
         {
             try
             {
-                Stream str = File.Open(filePath + @"\CustomerEntryDetails.dat", FileMode.Create);
+                Stream str = File.Open(filePath + @"\customerEntryDetails.dat", FileMode.Create);
                 BinaryFormatter bF = new BinaryFormatter();
                 bF.Serialize(str, entryDetails);
                 str.Flush();
@@ -37,10 +37,10 @@ namespace RecreationCenterTest
             try
             {
                 //CHECK IF FILE EXISTS
-                if (File.Exists(filePath + @"\CustomerEntryDetails.dat"))
+                if (File.Exists(filePath + @"\customerEntryDetails.dat"))
                 {
                     //OPEN FILE
-                    Stream stream = File.Open(filePath + @"\CustomerEntryDetails.dat", FileMode.Open);
+                    Stream stream = File.Open(filePath + @"\customerEntryDetails.dat", FileMode.Open);
 
                     //CHECK IF THE FILE IS EMPTY OR NULL
                     if (stream != null && stream.Length > 0)
@@ -80,7 +80,7 @@ namespace RecreationCenterTest
                     customerEntry.date = Convert.ToDateTime(values[2]);
                     customerEntry.inTime = Convert.ToDateTime(values[3]).TimeOfDay;
                     customerEntry.outTime = Convert.ToDateTime(values[4]).TimeOfDay;
-                    customerEntry.price = values[5];
+                    /*customerEntry.Price = Convert.ToInt32(values[5]);*/
 
                     entryCustomers.Add(customerEntry);
                 }
@@ -89,7 +89,7 @@ namespace RecreationCenterTest
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Sorry, not able to save data.");
+                MessageBox.Show("Sorry, not able to import data.");
             }
             return entryCustomers;
 

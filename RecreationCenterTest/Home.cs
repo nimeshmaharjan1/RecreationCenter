@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecreationCenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,31 @@ namespace RecreationCenterTest
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dailyReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+                DailyReport report = new DailyReport();
+                report.Show();
+        }
+
+        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void weeklyReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+                WeeklyReportForm reportForm = new WeeklyReportForm();
+                reportForm.Show();
+        }
+
+        private void generateChartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+                Chart chart = new Chart();
+                chart.Show();
+           
         }
     }
 }

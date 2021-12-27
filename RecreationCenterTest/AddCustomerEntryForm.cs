@@ -31,7 +31,7 @@ namespace RecreationCenterTest
                 entryDetail.outTime = outTimePicker.Value.TimeOfDay;
                 entryDetail.totalMinutes = entryDetail.CalculateTotalMinutes();
                 entryDetail.day = entryDetail.GetDay();
-                entryDetail.price = priceTextBox.Text;
+                /*entryDetail.Price = int.Parse(priceTextBox.Text);*/
                 return entryDetail;
             }
         }

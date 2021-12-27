@@ -17,7 +17,8 @@ namespace RecreationCenterTest
         public TimeSpan outTime { get; set; }
         public double totalMinutes { get; set; }
         public string day { get; set; }
-        public string price { get; set; }
+       /* public int Price { get; set; }*/
+
         [NonSerialized] public double Count;
 
         public CustomerEntry() { }
@@ -29,8 +30,8 @@ namespace RecreationCenterTest
         public static string KEY3 = "inTime";
         public static string KEY4 = "outTime";
         public static string KEY5 = "totalMinutes";
-        public static string Key6 = "day";
-        public static string Key7 = "price";
+        public static string KEY6 = "day";
+       /* public static string KEY7 = "Price";*/
 
         //CONSTRUCTOR FOR DESERIALIZATION
         public CustomerEntry(SerializationInfo serial, StreamingContext context)
@@ -43,21 +44,19 @@ namespace RecreationCenterTest
             inTime = (TimeSpan)serial.GetValue(KEY3, typeof(TimeSpan));
             outTime = (TimeSpan)serial.GetValue(KEY4, typeof(TimeSpan));
             totalMinutes = (double)serial.GetValue(KEY5, typeof(double));
-            day = (string)serial.GetValue(Key6, typeof(string));
-            price = (string)serial.GetValue(Key7, typeof(string));
+            day = (string)serial.GetValue(KEY6, typeof(string));
+            /*Price = (int)serial.GetValue(KEY7, typeof(int));*/
         }
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            //You can use any custom name for your name-value pair. But make sure you
-            // read the values with the same name. 
             info.AddValue(KEY, customerId);
             info.AddValue(KEY1, customerName);
             info.AddValue(KEY2, date);
             info.AddValue(KEY3, inTime);
             info.AddValue(KEY4, outTime);
             info.AddValue(KEY5, totalMinutes);
-            info.AddValue(Key6, day);
-            info.AddValue(Key7, price);
+            info.AddValue(KEY6, day);
+           /* info.AddValue(KEY7, Price);*/
         }
         public string GetDay()
         {

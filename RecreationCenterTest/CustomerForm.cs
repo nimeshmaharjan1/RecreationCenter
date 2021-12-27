@@ -109,5 +109,10 @@ namespace RecreationCenterTest
                 _customerDetailsRepo.ExportToCSV((List<Customer>)_customerBindingSource.DataSource, dialog.FileName);
             }
         }
+
+        private void customerListGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

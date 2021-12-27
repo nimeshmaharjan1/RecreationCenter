@@ -42,13 +42,13 @@ namespace RecreationCenterTest
             // 
             // goHomeBtn
             // 
-            this.goHomeBtn.BackColor = System.Drawing.Color.Crimson;
+            this.goHomeBtn.BackColor = System.Drawing.Color.MidnightBlue;
             this.goHomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goHomeBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goHomeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.goHomeBtn.Location = new System.Drawing.Point(549, 406);
             this.goHomeBtn.Name = "goHomeBtn";
-            this.goHomeBtn.Size = new System.Drawing.Size(137, 54);
+            this.goHomeBtn.Size = new System.Drawing.Size(129, 44);
             this.goHomeBtn.TabIndex = 13;
             this.goHomeBtn.Text = "Home";
             this.goHomeBtn.UseVisualStyleBackColor = false;
@@ -56,13 +56,13 @@ namespace RecreationCenterTest
             // 
             // exportCustomerEntryBtn
             // 
-            this.exportCustomerEntryBtn.BackColor = System.Drawing.Color.Crimson;
+            this.exportCustomerEntryBtn.BackColor = System.Drawing.Color.MidnightBlue;
             this.exportCustomerEntryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exportCustomerEntryBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportCustomerEntryBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.exportCustomerEntryBtn.Location = new System.Drawing.Point(381, 406);
             this.exportCustomerEntryBtn.Name = "exportCustomerEntryBtn";
-            this.exportCustomerEntryBtn.Size = new System.Drawing.Size(137, 54);
+            this.exportCustomerEntryBtn.Size = new System.Drawing.Size(129, 44);
             this.exportCustomerEntryBtn.TabIndex = 12;
             this.exportCustomerEntryBtn.Text = "Export";
             this.exportCustomerEntryBtn.UseVisualStyleBackColor = false;
@@ -70,13 +70,13 @@ namespace RecreationCenterTest
             // 
             // importCustomerEntryBtn
             // 
-            this.importCustomerEntryBtn.BackColor = System.Drawing.Color.Crimson;
+            this.importCustomerEntryBtn.BackColor = System.Drawing.Color.MidnightBlue;
             this.importCustomerEntryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.importCustomerEntryBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.importCustomerEntryBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.importCustomerEntryBtn.Location = new System.Drawing.Point(205, 406);
             this.importCustomerEntryBtn.Name = "importCustomerEntryBtn";
-            this.importCustomerEntryBtn.Size = new System.Drawing.Size(137, 54);
+            this.importCustomerEntryBtn.Size = new System.Drawing.Size(129, 44);
             this.importCustomerEntryBtn.TabIndex = 11;
             this.importCustomerEntryBtn.Text = "Import";
             this.importCustomerEntryBtn.UseVisualStyleBackColor = false;
@@ -84,13 +84,13 @@ namespace RecreationCenterTest
             // 
             // retrieveCustomerEntryBtn
             // 
-            this.retrieveCustomerEntryBtn.BackColor = System.Drawing.Color.Crimson;
+            this.retrieveCustomerEntryBtn.BackColor = System.Drawing.Color.MidnightBlue;
             this.retrieveCustomerEntryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.retrieveCustomerEntryBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.retrieveCustomerEntryBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.retrieveCustomerEntryBtn.Location = new System.Drawing.Point(35, 225);
             this.retrieveCustomerEntryBtn.Name = "retrieveCustomerEntryBtn";
-            this.retrieveCustomerEntryBtn.Size = new System.Drawing.Size(137, 54);
+            this.retrieveCustomerEntryBtn.Size = new System.Drawing.Size(129, 44);
             this.retrieveCustomerEntryBtn.TabIndex = 10;
             this.retrieveCustomerEntryBtn.Text = "Retrieve";
             this.retrieveCustomerEntryBtn.UseVisualStyleBackColor = false;
@@ -98,13 +98,13 @@ namespace RecreationCenterTest
             // 
             // saveCustomerEntryBtn
             // 
-            this.saveCustomerEntryBtn.BackColor = System.Drawing.Color.Crimson;
+            this.saveCustomerEntryBtn.BackColor = System.Drawing.Color.MidnightBlue;
             this.saveCustomerEntryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveCustomerEntryBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveCustomerEntryBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.saveCustomerEntryBtn.Location = new System.Drawing.Point(35, 142);
             this.saveCustomerEntryBtn.Name = "saveCustomerEntryBtn";
-            this.saveCustomerEntryBtn.Size = new System.Drawing.Size(137, 54);
+            this.saveCustomerEntryBtn.Size = new System.Drawing.Size(129, 44);
             this.saveCustomerEntryBtn.TabIndex = 9;
             this.saveCustomerEntryBtn.Text = "Save";
             this.saveCustomerEntryBtn.UseVisualStyleBackColor = false;
@@ -112,13 +112,13 @@ namespace RecreationCenterTest
             // 
             // entryCustomer
             // 
-            this.entryCustomer.BackColor = System.Drawing.Color.Crimson;
+            this.entryCustomer.BackColor = System.Drawing.Color.MidnightBlue;
             this.entryCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.entryCustomer.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entryCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.entryCustomer.Location = new System.Drawing.Point(35, 59);
             this.entryCustomer.Name = "entryCustomer";
-            this.entryCustomer.Size = new System.Drawing.Size(137, 54);
+            this.entryCustomer.Size = new System.Drawing.Size(129, 44);
             this.entryCustomer.TabIndex = 8;
             this.entryCustomer.Text = "Entry Customer";
             this.entryCustomer.UseVisualStyleBackColor = false;
@@ -137,14 +137,14 @@ namespace RecreationCenterTest
             // 
             // sortByBtn
             // 
-            this.sortByBtn.BackColor = System.Drawing.Color.Crimson;
+            this.sortByBtn.BackColor = System.Drawing.Color.MidnightBlue;
             this.sortByBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sortByBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortByBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.sortByBtn.Location = new System.Drawing.Point(35, 311);
             this.sortByBtn.Name = "sortByBtn";
             this.sortByBtn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sortByBtn.Size = new System.Drawing.Size(137, 54);
+            this.sortByBtn.Size = new System.Drawing.Size(129, 44);
             this.sortByBtn.TabIndex = 14;
             this.sortByBtn.Text = "Sort By Minutes";
             this.sortByBtn.UseVisualStyleBackColor = false;
