@@ -13,26 +13,28 @@ namespace RecreationCenter
 {
     public partial class WeeklyReportForm : Form
     {
+        private CustomerEntryDetails _entryDetailRepository = new CustomerEntryDetails();
+        private List<CustomerEntry> _entryDetailList = new List<CustomerEntry>();
         public WeeklyReportForm()
         {
             InitializeComponent();
         }
-        private CustomerEntryDetails _visitRepository = new CustomerEntryDetails();
-        private List<CustomerEntry> _visitList = new List<CustomerEntry>();
         private void FillChart()
         {
-            foreach (var entryDetail in _visitList)
+            foreach (var entryDetail in _entryDetailList)
             {
-                var a = entryDetail.date.DayOfWeek.ToString();
-                var b = entryDetail.Count.ToString();
-                var c = entryDetail.totalMinutes.ToString();
-                this.weeklyGridView.Rows.Add(a, b, c);
+                var a = entryDetail.Date.DayOfWeek.ToString();
+                var b = entryDetail.TotalMinutes.ToString();
+                var c = entryDetail.Count.ToString();
+                var d = entryDetail.Price.ToString();
+                /*var d = entryDetail.TotalRevenue.ToString();*/
+                this.weeklyGridView.Rows.Add(a, c, d, b);
             }
         }
 
         private void WeeklyReportForm_Load(object sender, EventArgs e)
         {
-            _visitList = _visitRepository.GetWeeksData();
+            _entryDetailList = _entryDetailRepository.GetWeeksData();
             FillChart();
         }
 
@@ -44,6 +46,11 @@ namespace RecreationCenter
         private void weeklyGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void sortByTotalRevenueBtn_Click(object sender, EventArgs e)
+        {
+            this.weeklyGridView.Sort(this.weeklyGridView.Columns["Column3"], ListSortDirection.Ascending);
         }
     }
 }

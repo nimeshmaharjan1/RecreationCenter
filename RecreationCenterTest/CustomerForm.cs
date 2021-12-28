@@ -37,7 +37,7 @@ namespace RecreationCenterTest
             if (result == DialogResult.OK)
             {
                 var newCustomer = addCustomerForm.Customer;
-                newCustomer.customerId = _customerDetailsRepo.GenerateId();
+                newCustomer.CustomerId = _customerDetailsRepo.GenerateId();
                 _customerBindingSource.Add(newCustomer);
                 _customerDetailsRepo.SaveCustomers((List<Customer>)_customerBindingSource.DataSource);
             }

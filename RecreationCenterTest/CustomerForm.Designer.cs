@@ -52,7 +52,7 @@ namespace RecreationCenterTest
             // 
             // addCustomerBtn
             // 
-            this.addCustomerBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.addCustomerBtn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.addCustomerBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addCustomerBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addCustomerBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -66,7 +66,7 @@ namespace RecreationCenterTest
             // 
             // saveCustomer
             // 
-            this.saveCustomer.BackColor = System.Drawing.Color.MidnightBlue;
+            this.saveCustomer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.saveCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveCustomer.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -80,7 +80,7 @@ namespace RecreationCenterTest
             // 
             // retrieveCustomer
             // 
-            this.retrieveCustomer.BackColor = System.Drawing.Color.MidnightBlue;
+            this.retrieveCustomer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.retrieveCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.retrieveCustomer.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.retrieveCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -94,7 +94,7 @@ namespace RecreationCenterTest
             // 
             // importCustomer
             // 
-            this.importCustomer.BackColor = System.Drawing.Color.MidnightBlue;
+            this.importCustomer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.importCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.importCustomer.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.importCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -108,7 +108,7 @@ namespace RecreationCenterTest
             // 
             // exportCustomer
             // 
-            this.exportCustomer.BackColor = System.Drawing.Color.MidnightBlue;
+            this.exportCustomer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.exportCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exportCustomer.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -122,7 +122,7 @@ namespace RecreationCenterTest
             // 
             // goHomeBtn
             // 
-            this.goHomeBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.goHomeBtn.BackColor = System.Drawing.Color.Crimson;
             this.goHomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goHomeBtn.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goHomeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;

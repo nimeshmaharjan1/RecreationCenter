@@ -24,14 +24,16 @@ namespace RecreationCenterTest
             get
             {
                 var entryDetail = new CustomerEntry();
-                entryDetail.customerName = Convert.ToString(nameComboBox.SelectedValue);
-                entryDetail.date = entryDatePicker.Value.Date;
-                entryDetail.day = entryDatePicker.Value.DayOfWeek.ToString();
-                entryDetail.inTime = inTimePicker.Value.TimeOfDay;
-                entryDetail.outTime = outTimePicker.Value.TimeOfDay;
-                entryDetail.totalMinutes = entryDetail.CalculateTotalMinutes();
-                entryDetail.day = entryDetail.GetDay();
-                /*entryDetail.Price = int.Parse(priceTextBox.Text);*/
+                entryDetail.CustomerName = Convert.ToString(nameComboBox.SelectedValue);
+                entryDetail.Date = entryDatePicker.Value.Date;
+                entryDetail.Day = entryDatePicker.Value.DayOfWeek.ToString();
+                entryDetail.InTime = inTimePicker.Value.TimeOfDay;
+                entryDetail.OutTime = outTimePicker.Value.TimeOfDay;
+                entryDetail.TotalMinutes = entryDetail.CalculateTotalMinutes();
+                entryDetail.Day = entryDetail.GetDay();
+                entryDetail.Price = int.Parse(priceTextBox.Text);
+                entryDetail.CustomerType = customerTypeComboBox.Text.ToString();
+                /*entryDetail.TotalRevenue = entryDetail.GetTotalRevenue();*/
                 return entryDetail;
             }
         }
@@ -111,6 +113,16 @@ namespace RecreationCenterTest
                 }
                 return;
             }
+        }
+
+        private void price_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

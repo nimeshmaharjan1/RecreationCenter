@@ -39,7 +39,7 @@ namespace RecreationCenterTest
                 _entryDetailBindingSource.Add(newEntryDetail);
 
                 //generate unique id and store.
-                newEntryDetail.customerId = _entryDetailRepository.GeneratesId();
+                newEntryDetail.CustomerId = _entryDetailRepository.GeneratesId();
 
                 //save to the object state file.
                 _entryDetailRepository.SaveEntrydetails((List<CustomerEntry>)_entryDetailBindingSource.DataSource);

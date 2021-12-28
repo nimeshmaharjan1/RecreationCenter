@@ -29,10 +29,11 @@ namespace RecreationCenter
         {
             foreach (var entryDetail in _entryDetailList)
             {
-                var a = entryDetail.date.DayOfWeek.ToString();
-                var b = entryDetail.totalMinutes.ToString();
+                var a = entryDetail.Date.DayOfWeek.ToString();
+                var b = entryDetail.TotalMinutes.ToString();
                 var c = entryDetail.Count.ToString();
-                this.dailyGridView.Rows.Add(a, c, b);
+                var d = entryDetail.Price.ToString();
+                this.dailyGridView.Rows.Add(a, c, b, d);
             }
         }
 

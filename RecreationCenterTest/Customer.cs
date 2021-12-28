@@ -10,11 +10,11 @@ namespace RecreationCenterTest
     [Serializable()]
     public class Customer : ISerializable
     {
-        public int customerId { get; set; }
-        public string customerName { get; set; }
-        public int customerAge { get; set; }
+        public int CustomerId { get; set; }
+        public string CustomerName { get; set; }
+        public int CustomerAge { get; set; }
         public string customerAddress { get; set; }
-        public string customerContact { get; set; }
+        public string CustomerContact { get; set; }
 
         //Creating key and value pairs for serialization
         public static string KEY = "customerId";
@@ -29,11 +29,11 @@ namespace RecreationCenterTest
         public Customer(SerializationInfo serial, StreamingContext context)
         {
             //Get the values from info and assign them to the appropriate properties
-            customerId = (int)serial.GetValue(KEY, typeof(int));
-            customerName = (string)serial.GetValue(KEY1, typeof(string));
-            customerAge = (int)serial.GetValue(KEY2, typeof(int));
+            CustomerId = (int)serial.GetValue(KEY, typeof(int));
+            CustomerName = (string)serial.GetValue(KEY1, typeof(string));
+            CustomerAge = (int)serial.GetValue(KEY2, typeof(int));
             customerAddress = (string)serial.GetValue(KEY3, typeof(string));
-            customerContact = (string)serial.GetValue(KEY4, typeof(string));
+            CustomerContact = (string)serial.GetValue(KEY4, typeof(string));
         }
 
         
@@ -42,11 +42,11 @@ namespace RecreationCenterTest
         {
             //You can use any custom name for your name-value pair. But make sure you
             // read the values with the same name. 
-            info.AddValue(KEY, customerId);
-            info.AddValue(KEY1, customerName);
-            info.AddValue(KEY2, customerAge);
+            info.AddValue(KEY, CustomerId);
+            info.AddValue(KEY1, CustomerName);
+            info.AddValue(KEY2, CustomerAge);
             info.AddValue(KEY3, customerAddress);
-            info.AddValue(KEY4, customerContact);
+            info.AddValue(KEY4, CustomerContact);
 
         }
 

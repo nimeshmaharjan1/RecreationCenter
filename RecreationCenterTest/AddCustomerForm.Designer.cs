@@ -118,11 +118,11 @@ namespace RecreationCenterTest
             // 
             // addCustomerBtn
             // 
-            this.addCustomerBtn.BackColor = System.Drawing.Color.Crimson;
+            this.addCustomerBtn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.addCustomerBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.addCustomerBtn.Font = new System.Drawing.Font("Noto Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addCustomerBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addCustomerBtn.Location = new System.Drawing.Point(144, 238);
+            this.addCustomerBtn.Location = new System.Drawing.Point(138, 237);
             this.addCustomerBtn.Name = "addCustomerBtn";
             this.addCustomerBtn.Size = new System.Drawing.Size(112, 38);
             this.addCustomerBtn.TabIndex = 8;

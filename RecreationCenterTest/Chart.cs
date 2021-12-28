@@ -33,7 +33,7 @@ namespace RecreationCenter
         {
             foreach (var visit in _customerEntryList)
             {
-                visitChart.Series["Visitation"].Points.AddXY(visit.date.DayOfWeek.ToString(), visit.totalMinutes.ToString());
+                visitChart.Series["Visitation"].Points.AddXY(visit.Date.DayOfWeek.ToString(), visit.TotalMinutes.ToString());
             }
             visitChart.Titles.Add("Total Visitation in Minutes");
         }

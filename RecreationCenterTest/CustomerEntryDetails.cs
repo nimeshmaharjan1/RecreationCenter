@@ -5,8 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RecreationCenterTest
@@ -75,12 +73,13 @@ namespace RecreationCenterTest
                 {
                     var values = item.Split(',');
                     var customerEntry = new CustomerEntry();
-                    customerEntry.customerId = Convert.ToInt32(values[0]);
-                    customerEntry.customerName = values[1];
-                    customerEntry.date = Convert.ToDateTime(values[2]);
-                    customerEntry.inTime = Convert.ToDateTime(values[3]).TimeOfDay;
-                    customerEntry.outTime = Convert.ToDateTime(values[4]).TimeOfDay;
-                    /*customerEntry.Price = Convert.ToInt32(values[5]);*/
+                    customerEntry.CustomerId = Convert.ToInt32(values[0]);
+                    customerEntry.CustomerName = values[1];
+                    customerEntry.Date = Convert.ToDateTime(values[2]);
+                    customerEntry.InTime = Convert.ToDateTime(values[3]).TimeOfDay;
+                    customerEntry.OutTime = Convert.ToDateTime(values[4]).TimeOfDay;
+                    customerEntry.Price = Convert.ToInt32(values[5]);
+                    customerEntry.CustomerType = (values[6]);
 
                     entryCustomers.Add(customerEntry);
                 }
@@ -148,12 +147,27 @@ namespace RecreationCenterTest
             }
 
         }
+       /* public List<CustomerEntry> GetTotalRevenue()
+        {
+            DeserializeCustomerEntryData();
+
+            if (_customerEntryDetailsList != null && _customerEntryDetailsList.Count > 0)
+            {
+                return _customerEntryDetailsList;
+            }
+            else
+            {
+                _customerEntryDetailsList = new List<CustomerEntry>();
+                return _customerEntryDetailsList;
+            }
+
+        }*/
         public int GeneratesId()
         {
             int id = 0;
             if (_customerEntryDetailsList != null && _customerEntryDetailsList.Count > 0)
             {
-                id = _customerEntryDetailsList.Max(a => a.customerId);
+                id = _customerEntryDetailsList.Max(a => a.CustomerId);
             }
 
             return id + 1;
@@ -166,8 +180,8 @@ namespace RecreationCenterTest
             {
                 for (int j = 0; j < _customerEntryDetailsList.Count - 1; j++)
                 {
-                    var val1 = Convert.ToInt32(_customerEntryDetailsList[j].totalMinutes);
-                    var val2 = Convert.ToInt32(_customerEntryDetailsList[j + 1].totalMinutes);
+                    var val1 = Convert.ToInt32(_customerEntryDetailsList[j].TotalMinutes);
+                    var val2 = Convert.ToInt32(_customerEntryDetailsList[j + 1].TotalMinutes);
                     if (val1 > val2)
                     {
                         var temp = _customerEntryDetailsList[j + 1];
@@ -194,18 +208,21 @@ namespace RecreationCenterTest
                 endOfWeek = new DateTime(endOfWeek.Year, endOfWeek.Month, endOfWeek.Day, 18, 0, 0);
 
                 var weeklyData = (from entryDetail in _customerEntryDetailsList
-                                  where entryDetail.date >= startOfWeek
-                                  && entryDetail.date <= endOfWeek
+                                  where entryDetail.Date >= startOfWeek
+                                  && entryDetail.Date <= endOfWeek
                                   //GROUPS DATA BY DATE
-                                  group entryDetail by entryDetail.date into grp 
+                                  group entryDetail by entryDetail.Date into grp 
                                   select new CustomerEntry
                                   {
                                       //GET MAXIMUM VALUE
-                                      date = grp.Max(a => a.date), 
+                                      Date = grp.Max(a => a.Date),
+                                      Count = grp.Count(),
+                                      /*TotalRevenue = grp.Sum(a => a.TotalRevenue),*/
                                       //SUM OF TOTAL MINUTES OF THE DAY
-                                      totalMinutes = grp.Sum(a => a.totalMinutes)
+                                      Price = grp.Sum(a => a.Price),
+                                      TotalMinutes = grp.Sum(a => a.TotalMinutes)
                                       //ORDER THE DATA IN DESCENDING ORDER AND RETURN A LIST
-                                  }).OrderByDescending(a => a.totalMinutes).ToList(); 
+                                  }).OrderByDescending(a => a.Count).ToList(); 
                 return weeklyData;
             }
             else
@@ -224,13 +241,14 @@ namespace RecreationCenterTest
 
 
                 var dailyData = (from _entry in _customerEntryDetailsList
-                                 where _entry.date == currentDate
-                                 group _entry by _entry.date into grp 
+                                 where _entry.Date == currentDate
+                                 group _entry by _entry.Date into grp 
                                  select new CustomerEntry
                                  {
-                                     date = grp.Max(a => a.date),
+                                     Date = grp.Max(a => a.Date),
                                      Count = grp.Count(),
-                                     totalMinutes = grp.Sum(a => a.totalMinutes)
+                                     Price = grp.Sum(a => a.Price),
+                                     TotalMinutes = grp.Sum(a => a.TotalMinutes)
                                  }).OrderByDescending(a => a.Count).ToList();
                 return dailyData;
             }

@@ -41,6 +41,8 @@ namespace RecreationCenterTest
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.customerTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -92,23 +94,25 @@ namespace RecreationCenterTest
             this.price.AutoSize = true;
             this.price.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.price.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.price.Location = new System.Drawing.Point(26, 216);
+            this.price.Location = new System.Drawing.Point(26, 255);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(42, 15);
             this.price.TabIndex = 4;
             this.price.Text = "Price";
+            this.price.Click += new System.EventHandler(this.price_Click);
             // 
             // nameComboBox
             // 
             this.nameComboBox.FormattingEnabled = true;
-            this.nameComboBox.Location = new System.Drawing.Point(104, 43);
+            this.nameComboBox.Location = new System.Drawing.Point(138, 44);
             this.nameComboBox.Name = "nameComboBox";
             this.nameComboBox.Size = new System.Drawing.Size(156, 21);
             this.nameComboBox.TabIndex = 13;
+            this.nameComboBox.SelectedIndexChanged += new System.EventHandler(this.nameComboBox_SelectedIndexChanged);
             // 
             // entryDatePicker
             // 
-            this.entryDatePicker.Location = new System.Drawing.Point(104, 85);
+            this.entryDatePicker.Location = new System.Drawing.Point(138, 86);
             this.entryDatePicker.Name = "entryDatePicker";
             this.entryDatePicker.Size = new System.Drawing.Size(156, 20);
             this.entryDatePicker.TabIndex = 13;
@@ -116,7 +120,7 @@ namespace RecreationCenterTest
             // inTimePicker
             // 
             this.inTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.inTimePicker.Location = new System.Drawing.Point(104, 129);
+            this.inTimePicker.Location = new System.Drawing.Point(138, 130);
             this.inTimePicker.Name = "inTimePicker";
             this.inTimePicker.ShowUpDown = true;
             this.inTimePicker.Size = new System.Drawing.Size(86, 20);
@@ -127,7 +131,7 @@ namespace RecreationCenterTest
             // outTimePicker
             // 
             this.outTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.outTimePicker.Location = new System.Drawing.Point(104, 174);
+            this.outTimePicker.Location = new System.Drawing.Point(138, 175);
             this.outTimePicker.Name = "outTimePicker";
             this.outTimePicker.ShowUpDown = true;
             this.outTimePicker.Size = new System.Drawing.Size(86, 20);
@@ -141,7 +145,7 @@ namespace RecreationCenterTest
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Font = new System.Drawing.Font("Roboto Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(160, 255);
+            this.button1.Location = new System.Drawing.Point(170, 304);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 38);
             this.button1.TabIndex = 14;
@@ -151,11 +155,11 @@ namespace RecreationCenterTest
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button2.Font = new System.Drawing.Font("Roboto Mono", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(55, 255);
+            this.button2.Location = new System.Drawing.Point(65, 304);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 38);
             this.button2.TabIndex = 13;
@@ -165,18 +169,44 @@ namespace RecreationCenterTest
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(104, 211);
+            this.priceTextBox.Location = new System.Drawing.Point(138, 254);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(156, 20);
             this.priceTextBox.TabIndex = 15;
             this.priceTextBox.TextChanged += new System.EventHandler(this.priceTextBox_TextChanged);
+            // 
+            // customerTypeComboBox
+            // 
+            this.customerTypeComboBox.FormattingEnabled = true;
+            this.customerTypeComboBox.Items.AddRange(new object[] {
+            "Child",
+            "Adult",
+            "Group of 5",
+            "Group of 10"});
+            this.customerTypeComboBox.Location = new System.Drawing.Point(138, 211);
+            this.customerTypeComboBox.Name = "customerTypeComboBox";
+            this.customerTypeComboBox.Size = new System.Drawing.Size(156, 21);
+            this.customerTypeComboBox.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(26, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 15);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Customer Type";
             // 
             // AddCustomerEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(302, 314);
+            this.ClientSize = new System.Drawing.Size(327, 365);
+            this.Controls.Add(this.customerTypeComboBox);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -212,5 +242,7 @@ namespace RecreationCenterTest
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.ComboBox customerTypeComboBox;
+        private System.Windows.Forms.Label label5;
     }
 }

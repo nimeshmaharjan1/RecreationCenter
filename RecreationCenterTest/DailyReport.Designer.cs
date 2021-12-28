@@ -34,6 +34,7 @@ namespace RecreationCenter
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalRevenue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dailyGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,43 +46,68 @@ namespace RecreationCenter
             this.Column2,
             this.Column3,
             this.totalRevenue});
-            this.dailyGridView.Location = new System.Drawing.Point(12, 6);
+            this.dailyGridView.Location = new System.Drawing.Point(47, 88);
+            this.dailyGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dailyGridView.Name = "dailyGridView";
-            this.dailyGridView.Size = new System.Drawing.Size(444, 266);
+            this.dailyGridView.RowHeadersWidth = 51;
+            this.dailyGridView.Size = new System.Drawing.Size(552, 314);
             this.dailyGridView.TabIndex = 1;
             this.dailyGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dailyGridView_CellContentClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Day";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "No ofVisitor";
+            this.Column2.HeaderText = "No. of Customers";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Total Duration (Total Minutes)";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // totalRevenue
             // 
             this.totalRevenue.HeaderText = "Total Revenue";
+            this.totalRevenue.MinimumWidth = 6;
             this.totalRevenue.Name = "totalRevenue";
+            this.totalRevenue.Width = 125;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(240, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 29);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Daily Report";
             // 
             // DailyReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 279);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(653, 445);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dailyGridView);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DailyReport";
             this.Text = "DailyReport";
             this.Load += new System.EventHandler(this.DailyReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dailyGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,5 +118,6 @@ namespace RecreationCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalRevenue;
+        private System.Windows.Forms.Label label1;
     }
 }

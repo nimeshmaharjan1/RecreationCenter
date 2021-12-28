@@ -22,10 +22,10 @@ namespace RecreationCenterTest
             get
             {
                 var customer = new Customer();
-                customer.customerName = customerNameTextBox.Text;
-                customer.customerAge = int.Parse(customerAgeTextBox.Text);
+                customer.CustomerName = customerNameTextBox.Text;
+                customer.CustomerAge = int.Parse(customerAgeTextBox.Text);
                 customer.customerAddress = customerAddressTextBox.Text;
-                customer.customerContact = customerContactTextBox.Text;
+                customer.CustomerContact = customerContactTextBox.Text;
                 return customer;
             }
 

@@ -76,11 +76,11 @@ namespace RecreationCenterTest
                 {
                     var values = item.Split(',');
                     var customer = new Customer();
-                    customer.customerId = Convert.ToInt32(values[0]);
-                    customer.customerName = values[1];
-                    customer.customerAge = Convert.ToInt32(values[2]);
+                    customer.CustomerId = Convert.ToInt32(values[0]);
+                    customer.CustomerName = values[1];
+                    customer.CustomerAge = Convert.ToInt32(values[2]);
                     customer.customerAddress = values[3];
-                    customer.customerContact = values[4];
+                    customer.CustomerContact = values[4];
 
 
                     customerList.Add(customer);
@@ -159,7 +159,7 @@ namespace RecreationCenterTest
             //TO CHECK IF THE LIST IS EMPTY OR NULL
             if (_customerDetailsList != null && _customerDetailsList.Count > 0)
             {
-                id = _customerDetailsList.Max(a => a.customerId);
+                id = _customerDetailsList.Max(a => a.CustomerId);
             }
 
             return id + 1;
