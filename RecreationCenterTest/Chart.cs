@@ -33,12 +33,19 @@ namespace RecreationCenter
         {
             foreach (var visit in _customerEntryList)
             {
-                visitChart.Series["Visitation"].Points.AddXY(visit.Date.DayOfWeek.ToString(), visit.TotalMinutes.ToString());
+                EarningsChart.Series["Total Revenue"].Points.AddXY(visit.Date.DayOfWeek.ToString(), visit.Price.ToString());
+                VisitorsChart.Series["Visitors"].Points.AddXY(visit.Date.DayOfWeek.ToString(), visit.Count.ToString());
             }
-            visitChart.Titles.Add("Total Visitation in Minutes");
+            EarningsChart.Titles.Add("Total Earnings");
+            VisitorsChart.Titles.Add("Total Number of Visitors");
         }
 
         private void visitChart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VisitorsChart_Click(object sender, EventArgs e)
         {
 
         }

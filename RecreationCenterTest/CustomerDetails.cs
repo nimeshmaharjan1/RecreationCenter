@@ -19,7 +19,7 @@ namespace RecreationCenterTest
         private string filePath;
 
         //SERIALIZATION TO CONVERT LIST INTO OBJECT DATA
-        private void serializeCustomerDetails(List<Customer> customers)
+        private void SerializeCustomerDetails(List<Customer> customers)
         {
             try
             {
@@ -168,7 +168,7 @@ namespace RecreationCenterTest
 
         public void SaveCustomers(List<Customer> customers)
         {
-            serializeCustomerDetails(customers);
+            SerializeCustomerDetails(customers);
         }
     }
 }

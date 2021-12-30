@@ -27,7 +27,7 @@ namespace RecreationCenterTest
             this.Hide();
         }
 
-        private void entryCustomer_Click(object sender, EventArgs e)
+        private void EntryCustomer_Click(object sender, EventArgs e)
         {
             AddCustomerEntryForm addCustomerEntryForm = new AddCustomerEntryForm();
             addCustomerEntryForm.MaximizeBox = false;
@@ -48,12 +48,12 @@ namespace RecreationCenterTest
             }
         }
 
-        private void saveCustomerEntryBtn_Click(object sender, EventArgs e)
+        private void SaveCustomerEntryBtn_Click(object sender, EventArgs e)
         {
             _entryDetailRepository.SaveEntrydetails((List<CustomerEntry>)_entryDetailBindingSource.DataSource);
         }
 
-        private void retrieveCustomerEntryBtn_Click(object sender, EventArgs e)
+        private void RetrieveCustomerEntryBtn_Click(object sender, EventArgs e)
         {
             //GET THE CUSTOMER LIST
             _entryDetailBindingSource.DataSource = _entryDetailRepository.GetEntryDetails();
@@ -69,10 +69,10 @@ namespace RecreationCenterTest
 
         private void CustomerEntryForm_Load(object sender, EventArgs e)
         {
-            retrieveCustomerEntryBtn_Click(sender, e);
+            RetrieveCustomerEntryBtn_Click(sender, e);
         }
 
-        private void exportCustomerEntryBtn_Click(object sender, EventArgs e)
+        private void ExportCustomerEntryBtn_Click(object sender, EventArgs e)
         {
             //step 1: create an instance of windows default save dialog box.
             var dialog = new SaveFileDialog();
@@ -89,7 +89,7 @@ namespace RecreationCenterTest
             }
         }
 
-        private void importCustomerEntryBtn_Click(object sender, EventArgs e)
+        private void ImportCustomerEntryBtn_Click(object sender, EventArgs e)
         {
             var dialog = new OpenFileDialog();
             dialog.Filter = "CSV files|*.csv";
@@ -107,14 +107,14 @@ namespace RecreationCenterTest
             }
         }
 
-        private void sortByBtn_Click(object sender, EventArgs e)
+        private void SortByBtn_Click(object sender, EventArgs e)
         {
             _entryDetailBindingSource.DataSource = _entryDetailRepository.BubbleSortUsingTotalMinutes();
             //refresh the grid to view the output.
             customerEntryFormGridView.Refresh();
         }
 
-        private void customerEntryFormGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void CustomerEntryFormGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

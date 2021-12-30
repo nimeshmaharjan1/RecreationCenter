@@ -66,7 +66,7 @@ namespace RecreationCenterTest
             this.exportCustomerEntryBtn.TabIndex = 12;
             this.exportCustomerEntryBtn.Text = "Export";
             this.exportCustomerEntryBtn.UseVisualStyleBackColor = false;
-            this.exportCustomerEntryBtn.Click += new System.EventHandler(this.exportCustomerEntryBtn_Click);
+            this.exportCustomerEntryBtn.Click += new System.EventHandler(this.ExportCustomerEntryBtn_Click);
             // 
             // importCustomerEntryBtn
             // 
@@ -80,7 +80,7 @@ namespace RecreationCenterTest
             this.importCustomerEntryBtn.TabIndex = 11;
             this.importCustomerEntryBtn.Text = "Import";
             this.importCustomerEntryBtn.UseVisualStyleBackColor = false;
-            this.importCustomerEntryBtn.Click += new System.EventHandler(this.importCustomerEntryBtn_Click);
+            this.importCustomerEntryBtn.Click += new System.EventHandler(this.ImportCustomerEntryBtn_Click);
             // 
             // retrieveCustomerEntryBtn
             // 
@@ -94,7 +94,7 @@ namespace RecreationCenterTest
             this.retrieveCustomerEntryBtn.TabIndex = 10;
             this.retrieveCustomerEntryBtn.Text = "Retrieve";
             this.retrieveCustomerEntryBtn.UseVisualStyleBackColor = false;
-            this.retrieveCustomerEntryBtn.Click += new System.EventHandler(this.retrieveCustomerEntryBtn_Click);
+            this.retrieveCustomerEntryBtn.Click += new System.EventHandler(this.RetrieveCustomerEntryBtn_Click);
             // 
             // saveCustomerEntryBtn
             // 
@@ -108,7 +108,7 @@ namespace RecreationCenterTest
             this.saveCustomerEntryBtn.TabIndex = 9;
             this.saveCustomerEntryBtn.Text = "Save";
             this.saveCustomerEntryBtn.UseVisualStyleBackColor = false;
-            this.saveCustomerEntryBtn.Click += new System.EventHandler(this.saveCustomerEntryBtn_Click);
+            this.saveCustomerEntryBtn.Click += new System.EventHandler(this.SaveCustomerEntryBtn_Click);
             // 
             // entryCustomer
             // 
@@ -122,7 +122,7 @@ namespace RecreationCenterTest
             this.entryCustomer.TabIndex = 8;
             this.entryCustomer.Text = "Entry Customer";
             this.entryCustomer.UseVisualStyleBackColor = false;
-            this.entryCustomer.Click += new System.EventHandler(this.entryCustomer_Click);
+            this.entryCustomer.Click += new System.EventHandler(this.EntryCustomer_Click);
             // 
             // customerEntryFormGridView
             // 
@@ -133,7 +133,7 @@ namespace RecreationCenterTest
             this.customerEntryFormGridView.Name = "customerEntryFormGridView";
             this.customerEntryFormGridView.Size = new System.Drawing.Size(501, 349);
             this.customerEntryFormGridView.TabIndex = 7;
-            this.customerEntryFormGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customerEntryFormGridView_CellContentClick);
+            this.customerEntryFormGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerEntryFormGridView_CellContentClick);
             // 
             // sortByBtn
             // 
@@ -148,7 +148,7 @@ namespace RecreationCenterTest
             this.sortByBtn.TabIndex = 14;
             this.sortByBtn.Text = "Sort By Minutes";
             this.sortByBtn.UseVisualStyleBackColor = false;
-            this.sortByBtn.Click += new System.EventHandler(this.sortByBtn_Click);
+            this.sortByBtn.Click += new System.EventHandler(this.SortByBtn_Click);
             // 
             // CustomerEntryForm
             // 
