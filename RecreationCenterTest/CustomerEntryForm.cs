@@ -8,13 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RecreationCenter;
 
 namespace RecreationCenterTest
 {
     public partial class CustomerEntryForm : Form
     {
         private BindingSource _entryDetailBindingSource = new BindingSource();
+        private BindingSource _ticketPriceBindingSource = new BindingSource();
         private CustomerEntryDetails _entryDetailRepository = new CustomerEntryDetails();
+        private TicketPriceRepo _ticketPriceRepo = new TicketPriceRepo();
         public CustomerEntryForm()
         {
             InitializeComponent();
@@ -117,6 +120,20 @@ namespace RecreationCenterTest
         private void CustomerEntryFormGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void DisplayPriceRateBtn_Click(object sender, EventArgs e)
+        {
+            //GET THE Price Rate LIST
+            _ticketPriceBindingSource.DataSource = _ticketPriceRepo.GetTicketPrices();
+
+            //if set to true creates a new object if the list is empty.
+            _ticketPriceBindingSource.AllowNew = false;
+
+            //display data in the binding source in the grid.
+            //assign the list to the grid.
+            priceRateGridView.DataSource = _ticketPriceBindingSource;
+            priceRateGridView.ReadOnly = true;
         }
     }
 }

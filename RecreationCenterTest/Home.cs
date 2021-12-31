@@ -61,5 +61,12 @@ namespace RecreationCenterTest
                 chart.Show();
            
         }
+
+        private void adminPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminPanelForm adminPanelForm = new AdminPanelForm();
+            adminPanelForm.Show();
+            this.Hide();
+        }
     }
 }

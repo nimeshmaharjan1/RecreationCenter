@@ -40,7 +40,6 @@ namespace RecreationCenterTest
         //this method converts the properties to object data using Key and value pair as mentioned above
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            //You can use any custom name for your name-value pair. But make sure you
             // read the values with the same name. 
             info.AddValue(KEY, CustomerId);
             info.AddValue(KEY1, CustomerName);

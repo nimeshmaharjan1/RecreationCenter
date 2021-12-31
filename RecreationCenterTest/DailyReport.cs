@@ -32,12 +32,16 @@ namespace RecreationCenter
                 var a = entryDetail.Date.DayOfWeek.ToString();
                 var b = entryDetail.TotalMinutes.ToString();
                 var c = entryDetail.Count.ToString();
-                var d = entryDetail.Price.ToString();
-                this.dailyGridView.Rows.Add(a, c, b, d);
+                this.dailyGridView.Rows.Add(a, c, b);
             }
         }
 
         private void dailyGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

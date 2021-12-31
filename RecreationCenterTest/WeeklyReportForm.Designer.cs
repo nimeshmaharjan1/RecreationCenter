@@ -130,7 +130,7 @@ namespace RecreationCenter
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(755, 525);
+            this.ClientSize = new System.Drawing.Size(767, 525);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sortByTotalRevenueBtn);
             this.Controls.Add(this.weeklyGridView);

@@ -34,6 +34,7 @@ namespace RecreationCenterTest
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.recreationCenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,7 +67,6 @@ namespace RecreationCenterTest
             this.chartToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1095, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "Add Customer";
@@ -74,16 +74,24 @@ namespace RecreationCenterTest
             // recreationCenterToolStripMenuItem
             // 
             this.recreationCenterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminPanelToolStripMenuItem,
             this.addCustomerToolStripMenuItem});
             this.recreationCenterToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recreationCenterToolStripMenuItem.Name = "recreationCenterToolStripMenuItem";
             this.recreationCenterToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.recreationCenterToolStripMenuItem.Text = "La Recepción";
             // 
+            // adminPanelToolStripMenuItem
+            // 
+            this.adminPanelToolStripMenuItem.Name = "adminPanelToolStripMenuItem";
+            this.adminPanelToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.adminPanelToolStripMenuItem.Text = "Admin Panel";
+            this.adminPanelToolStripMenuItem.Click += new System.EventHandler(this.adminPanelToolStripMenuItem_Click);
+            // 
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
-            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
             this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.addCustomerToolStripMenuItem_Click);
             // 
@@ -100,7 +108,7 @@ namespace RecreationCenterTest
             // 
             this.customerDetailToolStripMenuItem.Name = "customerDetailToolStripMenuItem";
             this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.customerDetailToolStripMenuItem.Text = "Detail";
+            this.customerDetailToolStripMenuItem.Text = "Entry Customer";
             this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.customerDetailToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
@@ -117,14 +125,14 @@ namespace RecreationCenterTest
             // dailyReportToolStripMenuItem
             // 
             this.dailyReportToolStripMenuItem.Name = "dailyReportToolStripMenuItem";
-            this.dailyReportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dailyReportToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.dailyReportToolStripMenuItem.Text = "Daily Report";
             this.dailyReportToolStripMenuItem.Click += new System.EventHandler(this.dailyReportToolStripMenuItem_Click);
             // 
             // weeklyReportToolStripMenuItem
             // 
             this.weeklyReportToolStripMenuItem.Name = "weeklyReportToolStripMenuItem";
-            this.weeklyReportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.weeklyReportToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.weeklyReportToolStripMenuItem.Text = "Weekly Report";
             this.weeklyReportToolStripMenuItem.Click += new System.EventHandler(this.weeklyReportToolStripMenuItem_Click);
             // 
@@ -140,7 +148,7 @@ namespace RecreationCenterTest
             // generateChartToolStripMenuItem
             // 
             this.generateChartToolStripMenuItem.Name = "generateChartToolStripMenuItem";
-            this.generateChartToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.generateChartToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
             this.generateChartToolStripMenuItem.Text = "Generate Chart";
             this.generateChartToolStripMenuItem.Click += new System.EventHandler(this.generateChartToolStripMenuItem_Click);
             // 
@@ -227,5 +235,6 @@ namespace RecreationCenterTest
         private System.Windows.Forms.ToolStripMenuItem dailyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem weeklyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generateChartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminPanelToolStripMenuItem;
     }
 }
