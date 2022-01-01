@@ -30,10 +30,11 @@ namespace RecreationCenter
         private void InitializeComponent()
         {
             this.dailyGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.homeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dailyGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,18 +52,6 @@ namespace RecreationCenter
             this.dailyGridView.Size = new System.Drawing.Size(552, 314);
             this.dailyGridView.TabIndex = 1;
             this.dailyGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dailyGridView_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(244, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Daily Report";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Column1
             // 
@@ -85,12 +74,39 @@ namespace RecreationCenter
             this.Column3.Name = "Column3";
             this.Column3.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(244, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 29);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Daily Report";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // homeBtn
+            // 
+            this.homeBtn.BackColor = System.Drawing.Color.Crimson;
+            this.homeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homeBtn.Location = new System.Drawing.Point(47, 33);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Padding = new System.Windows.Forms.Padding(5);
+            this.homeBtn.Size = new System.Drawing.Size(87, 39);
+            this.homeBtn.TabIndex = 7;
+            this.homeBtn.Text = "Home";
+            this.homeBtn.UseVisualStyleBackColor = false;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            // 
             // DailyReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(653, 445);
+            this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dailyGridView);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -110,5 +126,6 @@ namespace RecreationCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Button homeBtn;
     }
 }

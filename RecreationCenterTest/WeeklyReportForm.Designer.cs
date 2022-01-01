@@ -37,6 +37,7 @@ namespace RecreationCenter
             this.sortByBtn = new System.Windows.Forms.Button();
             this.sortByTotalRevenueBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.homeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.weeklyGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,12 +126,27 @@ namespace RecreationCenter
             this.label1.TabIndex = 5;
             this.label1.Text = "Weekly Report";
             // 
+            // homeBtn
+            // 
+            this.homeBtn.BackColor = System.Drawing.Color.Crimson;
+            this.homeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homeBtn.Location = new System.Drawing.Point(60, 32);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Padding = new System.Windows.Forms.Padding(5);
+            this.homeBtn.Size = new System.Drawing.Size(87, 39);
+            this.homeBtn.TabIndex = 8;
+            this.homeBtn.Text = "Home";
+            this.homeBtn.UseVisualStyleBackColor = false;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            // 
             // WeeklyReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(767, 525);
+            this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sortByTotalRevenueBtn);
             this.Controls.Add(this.weeklyGridView);
@@ -155,5 +171,6 @@ namespace RecreationCenter
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button sortByTotalRevenueBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button homeBtn;
     }
 }

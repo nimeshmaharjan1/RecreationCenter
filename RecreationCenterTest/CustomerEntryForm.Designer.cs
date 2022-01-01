@@ -173,7 +173,7 @@ namespace RecreationCenterTest
             this.displayPriceRateBtn.Name = "displayPriceRateBtn";
             this.displayPriceRateBtn.Size = new System.Drawing.Size(172, 54);
             this.displayPriceRateBtn.TabIndex = 15;
-            this.displayPriceRateBtn.Text = "Display Price Rate";
+            this.displayPriceRateBtn.Text = "Display Ticket Rate";
             this.displayPriceRateBtn.UseVisualStyleBackColor = false;
             this.displayPriceRateBtn.Click += new System.EventHandler(this.DisplayPriceRateBtn_Click);
             // 

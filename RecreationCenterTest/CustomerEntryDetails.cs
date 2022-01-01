@@ -197,13 +197,13 @@ namespace RecreationCenterTest
             DeserializeCustomerEntryData();
             if (_customerEntryDetailsList != null && _customerEntryDetailsList.Count > 0)
             {
-                //SET Sunday AS THE STARTING DAY OF THE WEEK
+                //SET MONDAY AS THE STARTING DAY OF THE WEEK
                 var startOfWeek = DateTime.Now.AddDays(((int)DateTime.Now.DayOfWeek * -1) + 1);
                 //SET DEFAULT TIME AS 10:00:00
                 startOfWeek = new DateTime(startOfWeek.Year, startOfWeek.Month, startOfWeek.Day, 00, 0, 0);
 
-                //SET FRIDAY AS THE ENDING DAY OF THE WEEK
-                var endOfWeek = startOfWeek.AddDays(4);
+                //SET MONDAY AS THE ENDING DAY OF THE WEEK AS THE RECREATION CENTER IS OPEN THE WHOLE WEEK
+                var endOfWeek = startOfWeek.AddDays(7);
                 //SET END DEFAULT TIME AS 18:00:00
                 endOfWeek = new DateTime(endOfWeek.Year, endOfWeek.Month, endOfWeek.Day, 18, 0, 0);
 

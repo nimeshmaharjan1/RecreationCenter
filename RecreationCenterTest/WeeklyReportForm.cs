@@ -52,5 +52,12 @@ namespace RecreationCenter
         {
             this.weeklyGridView.Sort(this.weeklyGridView.Columns["Column3"], ListSortDirection.Ascending);
         }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            homeScreen homeForm = new homeScreen();
+            homeForm.Show();
+            this.Hide();
+        }
     }
 }

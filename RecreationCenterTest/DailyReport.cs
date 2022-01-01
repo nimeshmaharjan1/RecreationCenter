@@ -45,5 +45,13 @@ namespace RecreationCenter
         {
 
         }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+
+            homeScreen homeForm = new homeScreen();
+            homeForm.Show();
+            this.Hide();
+        }
     }
 }
