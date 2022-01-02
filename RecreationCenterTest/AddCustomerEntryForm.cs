@@ -31,7 +31,11 @@ namespace RecreationCenterTest
                 entryDetail.OutTime = outTimePicker.Value.TimeOfDay;
                 entryDetail.TotalMinutes = entryDetail.CalculateTotalMinutes();
                 entryDetail.Day = entryDetail.GetDay();
-                entryDetail.Price = int.Parse(priceTextBox.Text);
+                try { entryDetail.Price = int.Parse(priceTextBox.Text); }
+                catch(Exception e)
+                {
+                    MessageBox.Show("Invalid Input! Only whole numbers!", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }
                 entryDetail.CustomerType = customerTypeComboBox.Text.ToString();
                 /*entryDetail.TotalRevenue = entryDetail.GetTotalRevenue();*/
                 return entryDetail;

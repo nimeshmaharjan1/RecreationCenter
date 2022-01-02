@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecreationCenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,16 +31,28 @@ namespace RecreationCenterTest
         private void loginBtn_Click(object sender, EventArgs e)
         {
             //username and password of the user
-            string myUsername = "admin";
-            string myPassword = "admin";
+            string adminUsername = "admin";
+            string adminPw = "admin";
+            string employeeUsername = "employee";
+            string employeePw = "employee";
             //getting the value from the textbox where user types
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
-            //check if the username and password are correct
-            if (username == myUsername && password == myPassword)//if matches then login
+            //check if the username and password are correct for admin
+            if (username == adminUsername && password == adminPw)//if matches then login
             {
                 MessageBox.Show("Login Successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
+                AdminPanelForm adminPanel = new AdminPanelForm();
+                adminPanel.Show();
+            }
+            //check if the username and password are correct for admin
+            else if (username == employeeUsername && password == employeePw)
+            {
+                MessageBox.Show("Login Successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                homeScreen homeForm = new homeScreen();
+                homeForm.Show();
             }
             //if one or more field is left empty
             else if (username == "" || password == "")
@@ -52,9 +65,6 @@ namespace RecreationCenterTest
                 MessageBox.Show("Invalid Credentials! Please try again!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            homeScreen homeForm = new homeScreen();
-            homeForm.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)

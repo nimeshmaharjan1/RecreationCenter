@@ -34,7 +34,6 @@ namespace RecreationCenterTest
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.recreationCenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adminPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,24 +73,16 @@ namespace RecreationCenterTest
             // recreationCenterToolStripMenuItem
             // 
             this.recreationCenterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.adminPanelToolStripMenuItem,
             this.addCustomerToolStripMenuItem});
             this.recreationCenterToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recreationCenterToolStripMenuItem.Name = "recreationCenterToolStripMenuItem";
             this.recreationCenterToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.recreationCenterToolStripMenuItem.Text = "La Recepción";
             // 
-            // adminPanelToolStripMenuItem
-            // 
-            this.adminPanelToolStripMenuItem.Name = "adminPanelToolStripMenuItem";
-            this.adminPanelToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.adminPanelToolStripMenuItem.Text = "Admin Panel";
-            this.adminPanelToolStripMenuItem.Click += new System.EventHandler(this.adminPanelToolStripMenuItem_Click);
-            // 
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
-            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
             this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.addCustomerToolStripMenuItem_Click);
             // 
@@ -107,7 +98,7 @@ namespace RecreationCenterTest
             // customerDetailToolStripMenuItem
             // 
             this.customerDetailToolStripMenuItem.Name = "customerDetailToolStripMenuItem";
-            this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.customerDetailToolStripMenuItem.Text = "Entry Customer";
             this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.customerDetailToolStripMenuItem_Click);
             // 
@@ -235,6 +226,5 @@ namespace RecreationCenterTest
         private System.Windows.Forms.ToolStripMenuItem dailyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem weeklyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generateChartToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adminPanelToolStripMenuItem;
     }
 }

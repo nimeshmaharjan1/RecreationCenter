@@ -51,7 +51,7 @@ namespace RecreationCenter
             this.goHomeBtn.Name = "goHomeBtn";
             this.goHomeBtn.Size = new System.Drawing.Size(165, 50);
             this.goHomeBtn.TabIndex = 13;
-            this.goHomeBtn.Text = "Home";
+            this.goHomeBtn.Text = "Logout";
             this.goHomeBtn.UseVisualStyleBackColor = false;
             this.goHomeBtn.Click += new System.EventHandler(this.goHomeBtn_Click);
             // 
@@ -155,6 +155,7 @@ namespace RecreationCenter
             this.label1.Size = new System.Drawing.Size(182, 51);
             this.label1.TabIndex = 14;
             this.label1.Text = "Admin Panel";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // AdminPanelForm
             // 

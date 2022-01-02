@@ -107,9 +107,14 @@ namespace RecreationCenter
 
         private void goHomeBtn_Click(object sender, EventArgs e)
         {
-            homeScreen homeForm = new homeScreen();
-            homeForm.Show();
+            loginScreen loginScreen = new loginScreen();
+            loginScreen.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
