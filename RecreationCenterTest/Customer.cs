@@ -13,7 +13,7 @@ namespace RecreationCenterTest
         public int CustomerId { get; set; }
         public string CustomerName { get; set; }
         public int CustomerAge { get; set; }
-        public string customerAddress { get; set; }
+        public string CustomerAddress { get; set; }
         public string CustomerContact { get; set; }
 
         //Creating key and value pairs for serialization
@@ -32,7 +32,7 @@ namespace RecreationCenterTest
             CustomerId = (int)serial.GetValue(KEY, typeof(int));
             CustomerName = (string)serial.GetValue(KEY1, typeof(string));
             CustomerAge = (int)serial.GetValue(KEY2, typeof(int));
-            customerAddress = (string)serial.GetValue(KEY3, typeof(string));
+            CustomerAddress = (string)serial.GetValue(KEY3, typeof(string));
             CustomerContact = (string)serial.GetValue(KEY4, typeof(string));
         }
 
@@ -44,7 +44,7 @@ namespace RecreationCenterTest
             info.AddValue(KEY, CustomerId);
             info.AddValue(KEY1, CustomerName);
             info.AddValue(KEY2, CustomerAge);
-            info.AddValue(KEY3, customerAddress);
+            info.AddValue(KEY3, CustomerAddress);
             info.AddValue(KEY4, CustomerContact);
 
         }

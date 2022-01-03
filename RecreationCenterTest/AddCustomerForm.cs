@@ -24,7 +24,7 @@ namespace RecreationCenterTest
                 var customer = new Customer();
                 customer.CustomerName = customerNameTextBox.Text;
                 customer.CustomerAge = int.Parse(customerAgeTextBox.Text);
-                customer.customerAddress = customerAddressTextBox.Text;
+                customer.CustomerAddress = customerAddressTextBox.Text;
                 customer.CustomerContact = customerContactTextBox.Text;
                 return customer;
             }
@@ -38,7 +38,10 @@ namespace RecreationCenterTest
 
         private void addCustomerBtn_Click(object sender, EventArgs e)
         {
-
+/*            if(customerNameTextBox.Text == "" ||customerNameTextBox.Text == null)
+            {
+                MessageBox.Show("Customer Name cannot be blank", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }*/
         }
     }
 }

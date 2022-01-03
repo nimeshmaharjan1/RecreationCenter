@@ -153,6 +153,7 @@ namespace RecreationCenter
             this.Controls.Add(this.sortByBtn);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "WeeklyReportForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WeeklyReportForm";
             this.Load += new System.EventHandler(this.WeeklyReportForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.weeklyGridView)).EndInit();

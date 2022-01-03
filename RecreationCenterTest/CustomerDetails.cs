@@ -79,7 +79,7 @@ namespace RecreationCenterTest
                     customer.CustomerId = Convert.ToInt32(values[0]);
                     customer.CustomerName = values[1];
                     customer.CustomerAge = Convert.ToInt32(values[2]);
-                    customer.customerAddress = values[3];
+                    customer.CustomerAddress = values[3];
                     customer.CustomerContact = values[4];
 
 

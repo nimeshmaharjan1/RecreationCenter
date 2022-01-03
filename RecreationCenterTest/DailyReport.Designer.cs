@@ -111,6 +111,7 @@ namespace RecreationCenter
             this.Controls.Add(this.dailyGridView);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DailyReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DailyReport";
             this.Load += new System.EventHandler(this.DailyReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dailyGridView)).EndInit();
