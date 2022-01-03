@@ -45,6 +45,7 @@ namespace RecreationCenterTest
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,9 +83,9 @@ namespace RecreationCenterTest
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
-            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
-            this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.addCustomerToolStripMenuItem_Click);
+            this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.AddCustomerToolStripMenuItem_Click);
             // 
             // customerToolStripMenuItem
             // 
@@ -100,7 +101,7 @@ namespace RecreationCenterTest
             this.customerDetailToolStripMenuItem.Name = "customerDetailToolStripMenuItem";
             this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.customerDetailToolStripMenuItem.Text = "Entry Customer";
-            this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.customerDetailToolStripMenuItem_Click);
+            this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.CustomerDetailToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -111,21 +112,21 @@ namespace RecreationCenterTest
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             this.reportsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.reportsToolStripMenuItem.Text = "Reports";
-            this.reportsToolStripMenuItem.Click += new System.EventHandler(this.reportsToolStripMenuItem_Click);
+            this.reportsToolStripMenuItem.Click += new System.EventHandler(this.ReportsToolStripMenuItem_Click);
             // 
             // dailyReportToolStripMenuItem
             // 
             this.dailyReportToolStripMenuItem.Name = "dailyReportToolStripMenuItem";
             this.dailyReportToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.dailyReportToolStripMenuItem.Text = "Daily Report";
-            this.dailyReportToolStripMenuItem.Click += new System.EventHandler(this.dailyReportToolStripMenuItem_Click);
+            this.dailyReportToolStripMenuItem.Click += new System.EventHandler(this.DailyReportToolStripMenuItem_Click);
             // 
             // weeklyReportToolStripMenuItem
             // 
             this.weeklyReportToolStripMenuItem.Name = "weeklyReportToolStripMenuItem";
             this.weeklyReportToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.weeklyReportToolStripMenuItem.Text = "Weekly Report";
-            this.weeklyReportToolStripMenuItem.Click += new System.EventHandler(this.weeklyReportToolStripMenuItem_Click);
+            this.weeklyReportToolStripMenuItem.Click += new System.EventHandler(this.WeeklyReportToolStripMenuItem_Click);
             // 
             // chartToolStripMenuItem
             // 
@@ -141,7 +142,7 @@ namespace RecreationCenterTest
             this.generateChartToolStripMenuItem.Name = "generateChartToolStripMenuItem";
             this.generateChartToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
             this.generateChartToolStripMenuItem.Text = "Generate Chart";
-            this.generateChartToolStripMenuItem.Click += new System.EventHandler(this.generateChartToolStripMenuItem_Click);
+            this.generateChartToolStripMenuItem.Click += new System.EventHandler(this.GenerateChartToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -155,7 +156,7 @@ namespace RecreationCenterTest
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // label1
             // 
@@ -186,12 +187,27 @@ namespace RecreationCenterTest
             this.label2.TabIndex = 4;
             this.label2.Text = "Stay Active and Healthy";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Crimson;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(987, 65);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(5);
+            this.button1.Size = new System.Drawing.Size(76, 36);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "EXIT";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // homeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1095, 521);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -226,5 +242,6 @@ namespace RecreationCenterTest
         private System.Windows.Forms.ToolStripMenuItem dailyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem weeklyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generateChartToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }

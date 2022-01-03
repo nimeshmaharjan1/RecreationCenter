@@ -18,43 +18,43 @@ namespace RecreationCenterTest
             InitializeComponent();
         }
 
-        private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AddCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CustomerForm customerForm = new CustomerForm();
             customerForm.Show();
             this.Hide();
         }
 
-        private void customerDetailToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CustomerDetailToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CustomerEntryForm customerEntryForm = new CustomerEntryForm();
             customerEntryForm.Show();
             this.Hide();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dailyReportToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DailyReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
                 DailyReport report = new DailyReport();
                 report.Show();
         }
 
-        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void weeklyReportToolStripMenuItem_Click(object sender, EventArgs e)
+        private void WeeklyReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
                 WeeklyReportForm reportForm = new WeeklyReportForm();
                 reportForm.Show();
         }
 
-        private void generateChartToolStripMenuItem_Click(object sender, EventArgs e)
+        private void GenerateChartToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
                 Chart chart = new Chart();
@@ -62,11 +62,16 @@ namespace RecreationCenterTest
            
         }
 
-        private void adminPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AdminPanelToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AdminPanelForm adminPanelForm = new AdminPanelForm();
             adminPanelForm.Show();
             this.Hide();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
